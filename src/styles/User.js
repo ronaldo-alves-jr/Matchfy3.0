@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 
-  viewComponents:{
+  viewComponents:{ 
     backgroundColor: "purple",
     height: hp('37.5%'),
     width: wp('100%'), 
@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
   },
 
   viewMap:{
-    backgroundColor: "green",
     height: hp('57.5%'),
     width: wp('100%'),
   },
@@ -38,6 +37,8 @@ const styles = StyleSheet.create({
   config:{
     width: wp('15%'), 
     height: hp('30%'),
+    top: hp('1%'), 
+    left: hp('1%'), 
   },
 
   picture:{
@@ -50,7 +51,29 @@ const styles = StyleSheet.create({
 
   edit:{
     width: wp('15%'), 
-    height: hp('30%'),
+    height: hp('30%'), 
+    top: hp('1%'), 
+    right: hp('1%'),   
+  },
+
+  map:{
+    flex: 1,
+  },
+
+  annotationContainer: {
+    width: 30,
+    height: 30,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'white',
+    borderRadius: 15,
+  },
+  annotationFill: {
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+    backgroundColor: '#7159C1',
+    transform: [{ scale: 0.8 }],
   },
 
 
