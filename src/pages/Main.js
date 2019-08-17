@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Image, StatusBar, TouchableOpacity, Text } from 'react-native';
 import { Container, View, DeckSwiper, Card, CardItem} from 'native-base';  
 import Icon from 'react-native-vector-icons/AntDesign'; 
+import ViewPager from "@react-native-community/viewpager";
 
 
 import styles from '../styles/Main';
@@ -41,7 +42,7 @@ export default class Main extends Component {
               <View style={{ alignSelf: "center" }}>
                 <Text style={styles.empty}>Acabou :( </Text>
               </View>
-            }
+            } 
             renderItem={item => 
               <Card style={styles.cardsContainer}>   
                 <CardItem cardBody style={styles.card}>   
@@ -55,15 +56,14 @@ export default class Main extends Component {
                         <TouchableOpacity style={styles.infoIcon}>
                       <Icon name="info" size={30} /> 
                       </TouchableOpacity>
-                      </CardItem> 
-                  <Text numberOfLines={10} style={styles.bio}>{item.bio}</Text>
+                      </CardItem>  
+                  <Text numberOfLines={5} style={styles.bio}>{item.bio}</Text>
 
                 </CardItem>
               </Card>
             }
           />
         </View>
-
 
         <View style={styles.buttonView}>
 

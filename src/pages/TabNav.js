@@ -1,56 +1,8 @@
-/*import React, { Component } from 'react';
-import { Container, Tab, Tabs, TabHeading} from 'native-base';
-import { StatusBar} from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome'; 
- 
-import User from './User';
-import ChatList from './ChatList';
-import Main from './Main';
-  
-export default class TabNav extends Component {
- 
-  static navigationOptions = ({ navigation }) => {
-    return {
-      header:null
- 
-    }; 
-  }; 
-
-  componentDidMount() {
-    const { initialPage } = this.props;
-    setTimeout(this.tabs.goToPage.bind(this.tabs, initialPage));
-}
-  
-  render() {    
-    return ( 
-      <Container>
-         <StatusBar backgroundColor="purple"/> 
-        <Tabs initialPage={1} ref={(c) => { this.tabs = c; return; }} >  
-          <Tab heading={ <TabHeading style={{backgroundColor: 'purple'}} ><Icon name="user" size={35}  />
-          
-          </TabHeading>}>
-            <User />
-          </Tab>
-          <Tab heading={ <TabHeading style={{backgroundColor: 'purple'}}><Icon name="home" size={35} />
-            
-          </TabHeading>}>
-           <Main />
-          </Tab>
-          <Tab heading={ <TabHeading style={{backgroundColor: 'purple'}}><Icon name="comments" size={35} />
-          
-          </TabHeading>}>
-           <ChatList />
-          </Tab>
-        </Tabs> 
-     
-      </Container>
-    );
-  }
-}*/
 
 import React from 'react';
 import { View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome'; 
+import ViewPager from "@react-native-community/viewpager";
 
 import {
   createMaterialTopTabNavigator,
@@ -83,7 +35,7 @@ const mainNavigation = createMaterialTopTabNavigator(
       screen: User,
       navigationOptions: () => ({
         tabBarIcon: ({ focused }) => (
-          <Icon name="user" size={29} />  
+          <Icon name="user" size={29} color="white" />  
         ),
       }), 
     }, 
@@ -92,7 +44,7 @@ const mainNavigation = createMaterialTopTabNavigator(
       screen: Main,
       navigationOptions: () => ({
         tabBarIcon: ({ focused }) => (
-          <Icon name="home" size={29} />  
+          <Icon name="home" size={29} color="white" />  
         ),
       }),
     },
@@ -101,7 +53,7 @@ const mainNavigation = createMaterialTopTabNavigator(
       screen: ChatList,
       navigationOptions: () => ({ 
         tabBarIcon: ({ focused }) => (
-          <Icon name="comment" size={25} />   
+          <Icon name="comment" size={25} color="white"/>   
         ),
       }),
     },
