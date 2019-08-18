@@ -1,13 +1,36 @@
-import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import React, { Component } from 'react';
+
+import { Container, Header, Content, List, Icon, ListItem, Thumbnail, Text, Left, Body, Right, Button } from 'native-base';
 
 export default class ChatList extends Component {
   render() {
+    const { navigation } = this.props;
     return (
-      <View>
-        <Text> Tela de Lista de Chats (Luiz Gustavo) </Text>
-     
-      </View>
-    )
+      <Container>
+        <Content>
+          <List>
+            <ListItem thumbnail>
+            
+              <Left>
+                <Thumbnail square source={{ uri: 'Image URL' }} />
+              </Left>
+              <Body>
+              
+                <Text>Sankhadeep</Text>
+                <Text note numberOfLines={1}>Its time to build a difference . .</Text>
+              
+              </Body>
+              <Right>
+              <Button transparent color="black">
+              <Icon active name="arrow-forward"  onPress={() => navigation.navigate('Config')} />
+              </Button>    
+              </Right>
+            </ListItem>
+          </List>
+
+        </Content>
+        
+      </Container>
+    );
   }
 }

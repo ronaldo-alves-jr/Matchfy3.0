@@ -22,7 +22,15 @@ const Stack = createAppContainer(
     Main: MainScreen,
     User: UserScreen,
     ChatList: ChatListScreen, 
-    Config: ConfigScreen,
+
+    Config: {
+      screen: ConfigScreen, 
+      navigationOptions: {
+        title: 'Configurações',
+        
+      }
+    },
+
     Edit: EditScreen,
     
     
