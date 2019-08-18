@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 
 import { Container, Header, Content, List, Icon, ListItem, Thumbnail, Text, Left, Body, Right, Button } from 'native-base';
 
+import styles from '../assets/ChatList';
+
 export default class ChatList extends Component {
   render() {
     const { navigation } = this.props;
     return (
+<<<<<<< HEAD
       <Container>
         <Content>
           <List>
@@ -32,5 +35,6 @@ export default class ChatList extends Component {
         
       </Container>
     );
+
   }
 }
