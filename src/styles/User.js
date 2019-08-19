@@ -45,13 +45,14 @@ const styles = StyleSheet.create({
     width: wp('70%'), 
     height: hp('32%'),
     marginTop: hp('5%'),
-    borderRadius: 100, 
+    borderRadius: hp('100%'), 
+    flex: 1, 
 
   },
 
   edit:{
     width: wp('15%'), 
-    height: hp('30%'), 
+    height: hp('30%'),
     top: hp('1%'), 
     right: hp('1%'),   
   },
@@ -59,23 +60,6 @@ const styles = StyleSheet.create({
   map:{
     flex: 1,
   },
-
-  annotationContainer: {
-    width: 30,
-    height: 30,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'white',
-    borderRadius: 15,
-  },
-  annotationFill: {
-    width: 30,
-    height: 30,
-    borderRadius: 15,
-    backgroundColor: '#7159C1',
-    transform: [{ scale: 0.8 }],
-  },
-
 
 });
 

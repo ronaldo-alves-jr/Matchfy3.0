@@ -34,7 +34,7 @@ export default class User extends Component {
           </View>
 
           <View style={styles.viewName}> 
-            <Text style={styles.name}>{name}, 20</Text>
+            <Text style={styles.name} numberOfLines={1}>{name} </Text> 
           </View>
  
           <View style={styles.viewMap}> 

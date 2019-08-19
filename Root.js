@@ -7,6 +7,10 @@ import ChatListScreen from './src/pages/ChatList';
 import MainScreen from './src/pages/Main';
 import ConfigScreen from './src/pages/Config';
 import EditScreen from './src/pages/Edit';
+import AboutScreen from './src/pages/About';
+import InterestScreen from './src/pages/Interest';
+import PoliticScreen from './src/pages/Politic';
+import AdditionalScreen from './src/pages/Additional';
  
 const Stack = createAppContainer(
   createStackNavigator({
@@ -27,13 +31,37 @@ const Stack = createAppContainer(
       screen: ConfigScreen, 
       navigationOptions: {
         title: 'Configurações',
-        
+      }
+    },
+    Edit: EditScreen,
+
+    About: {
+     screen: AboutScreen,
+     navigationOptions: {
+      title: 'Sobre',
+    }
+    },
+
+    Interest: {
+      screen: InterestScreen,
+      navigationOptions: {
+        title: 'Interesses',
       }
     },
 
-    Edit: EditScreen,
-    
-    
+    Politic: {
+      screen: PoliticScreen,
+      navigationOptions: {
+        title: 'Política',
+      }
+    },
+
+    Additional: {
+      screen: AdditionalScreen,
+      navigationOptions: {
+        title: 'Adicionais',
+      }
+    }
 
   })
 );

@@ -23,6 +23,7 @@
     "react-native-responsive-screen": "^1.2.2",
     "react-native-restart": "^0.0.12",
     "react-native-sensitive-info": "^5.5.0",
+    "react-native-settings-page": "^2.0.6",
     "react-native-vector-icons": "^6.6.0",
     "react-navigation": "^3.11.1"
   },
