@@ -13,7 +13,7 @@ export default class Config extends Component {
         <Content>
           <List style={styles.list}>  
 
-            <ListItem avatar style={styles.listItem} onPress={() => navigation.navigate('ChatList')}>  
+            <ListItem avatar style={styles.listItem} onPress={() => navigation.navigate('Edit')}>  
               <Left> 
                 <Icon name="user" size={45} color="black" />
               </Left>

@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
 
   cardsContainer:{
     elevation: 3, 
-    marginTop: '10%',  
+    marginTop: '8%',  
     alignSelf: 'stretch',
      maxHeight: 500,
      borderColor: '#DDD',
@@ -88,10 +88,10 @@ const styles = StyleSheet.create({
     flex: 1, 
     position: "absolute", 
     bottom: "3%",  
-    left: 0, 
-    right: 0, 
+    left: hp('0%'), 
+    right: hp('0%'),  
     justifyContent: 'space-between', 
-    padding: 15,
+    paddingBottom: hp('0.7%'),   
   },
 
   infoIcon:{

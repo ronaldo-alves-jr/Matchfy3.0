@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   config:{
     width: wp('15%'), 
     height: hp('30%'),
-    top: hp('1%'), 
+    top: hp('3%'), 
     left: hp('1%'), 
   },
 
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   edit:{
     width: wp('15%'), 
     height: hp('30%'),
-    top: hp('1%'), 
+    top: hp('3%'), 
     right: hp('1%'),   
   },
 
